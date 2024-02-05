@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>video playlist</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+   <header class="header">
+      <section class="flex">
+         <a href="home.html" class="logo">Educa.</a>
+
+         <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="search courses..." maxlength="100" />
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+         </div>
+
+         <div class="profile">
+            <img src="images/pic-1.jpg" class="image" alt="" />
+            <h3 class="name">Olaniyan Folajimi</h3>
+            <p class="role">BU20CIT1003</p>
+            <a href="profile.html" class="btn">view profile</a>
+            <div class="flex-btn">
+               <a href="login.html" class="option-btn">login</a>
+               <a href="register.html" class="option-btn">register</a>
+            </div>
+         </div>
+      </section>
+   </header>
+
+   <div class="side-bar">
+      <div id="close-btn">
+         <i class="fas fa-times"></i>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="" />
+         <h3 class="name">Olaniyan Folajimi</h3>
+         <p class="role">BU20CIT1003</p>
+         <a href="profile.html" class="btn">view profile</a>
+      </div>
+
+      <nav class="navbar">
+         <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+         <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+         <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+         <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+         <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+      </nav>
+   </div>
+
+   <section class="playlist-details">
+      <h1 class="heading">playlist details</h1>
+
+      <div class="row">
+         <div class="column">
+            <form action="" method="post" class="save-playlist">
+               <button type="submit">
+                  <i class="far fa-bookmark"></i> <span>save playlist</span>
+               </button>
+            </form>
+
+            <div class="thumb">
+               <img
+                  src="data:image/jpeg;base64,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"
+                  alt="" />
+               <span>10 videos</span>
+            </div>
+         </div>
+         <div class="column">
+            <div class="tutor">
+               <img src="images/pic-2.jpg" alt="" />
+               <div>
+                  <h3>CIT 419</h3>
+                  <span>Madam Justice</span>
+               </div>
+            </div>
+
+            <div class="details">
+               <h3>MIS</h3>
+               <p>
+                  Management Information System (MIS) is a comprehensive and organized framework of technologies,
+                  processes, and personnel
+                  designed to gather, process, store, and disseminate information within an organization. MIS plays a
+                  pivotal role in
+                  supporting decision-making processes at various levels of management by providing timely, accurate,
+                  and relevant
+                  information.
+               </p>
+               <a href="teacher_profile.html" class="inline-btn">view profile</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Playlist video -->
+
+   <section class="playlist-videos">
+      <h1 class="heading">playlist videos</h1>
+
+      <div class="box-container">
+         <a class="box" href="watch_419.html">
+            <i class="fas fa-play"></i>
+            <img src="images/misi.jpg" alt="" />
+            <h3>What is MIS?</h3>
+         </a>
+
+         <a class="box" href="watch_419.html">
+            <i class="fas fa-play"></i>
+            <img src="images/tmis.jpg" alt="" />
+            <h3>Types of MIS</h3>
+         </a>
+
+         <!-- <a class="box" href="watch_407.html">
+            <i class="fas fa-play"></i>
+            <img src="images/ai2.jpeg" alt="" />
+            <h3>Types of AI</h3>
+         </a> -->
+      </div>
+   </section>
+
+   <section class="playlist-videos">
+      <h1 class="heading">playlist Pdfs</h1>
+      <!-- <embed src="pdfs/net.pdf" type="application/pdf" width="600" height="400" /> -->
+      <object data="pdfs/disk.pdf" type="application/pdf" width="600" height="400">
+         <p>Alternative text - include a link to the PDF!</p><br>
+      </object>
+   </section>
+
+   <footer class="footer">
+      &copy; copyright @ 2024 by <span>group 4 E-learning
+   </footer>
+
+   <!-- custom js file link  -->
+   <script src="js/script.js"></script>
+</body>
+
+</html>
